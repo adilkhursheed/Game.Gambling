@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Game.Gambling.Messaging" Version="1.0.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Game.Security.Application\Game.Security.Application.csproj" />
+    <ProjectReference Include="..\Game.Security.Domain\Game.Security.Domain.csproj" />
+    <ProjectReference Include="..\Game.Security.Infrastructure\Game.Security.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
